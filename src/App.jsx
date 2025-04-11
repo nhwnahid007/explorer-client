@@ -6,10 +6,13 @@ import Checkout from "./pages/Checkout";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Cart from "./pages/Cart";
+import Navbar from "./components/Navbar";
+import AddToFavourite from "./pages/AddToFavourite";
 
 const App = () => {
   return (
     <>
+      <Navbar></Navbar>
       <div className="">
         <Routes>
           <Route path="/" element={<Home></Home>} />
@@ -19,7 +22,7 @@ const App = () => {
           <Route path="/login" element={<Login></Login>} />
           <Route path="/signUp" element={<SignUp></SignUp>} />
           <Route path="/cart" element={<Cart></Cart>} />
-
+          <Route path="/wishlist" element={<AddToFavourite></AddToFavourite>} />
         </Routes>
       </div>
     </>
